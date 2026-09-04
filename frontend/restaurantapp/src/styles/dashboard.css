@@ -1,0 +1,258 @@
+/* =========================
+   DASHBOARD
+========================= */
+
+.dashboard-container {
+
+    min-height: 70vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 30px 20px;
+
+    background: #fff7ed;
+}
+
+
+/* =========================
+   DASHBOARD BOX
+========================= */
+
+.dashboard-box {
+
+    width: 500px;
+
+    padding: 45px 40px;
+
+    text-align: center;
+
+    background: #ffffff;
+
+    border-radius: 20px;
+
+    border: 1px solid #fed7aa;
+
+    box-shadow:
+        0 15px 40px rgba(146, 64, 14, 0.12);
+}
+
+
+/* =========================
+   LOGO
+========================= */
+
+.dashboard-logo {
+
+    width: 75px;
+
+    height: 75px;
+
+    margin: 0 auto 20px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #fff7ed;
+
+    color: #d97706;
+
+    font-size: 32px;
+
+    border: 2px solid #fde68a;
+}
+
+
+/* =========================
+   HEADING
+========================= */
+
+.dashboard-box h1 {
+
+    margin: 0;
+
+    color: #92400e;
+
+    font-size: 30px;
+
+    font-weight: 700;
+}
+
+
+/* =========================
+   SUBTITLE
+========================= */
+
+.dashboard-subtitle {
+
+    margin: 10px 0 30px;
+
+    color: #78716c;
+
+    font-size: 15px;
+}
+
+
+/* =========================
+   ACTION BUTTONS
+========================= */
+
+.dashboard-actions {
+
+    display: flex;
+
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 25px;
+}
+
+
+.dashboard-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 11px 18px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+
+/* View Restaurants */
+
+.view-btn {
+
+    color: #92400e;
+
+    background: #fff7ed;
+
+    border: 1px solid #fed7aa;
+}
+
+.view-btn:hover {
+
+    background: #fde68a;
+
+    color: #92400e;
+}
+
+
+/* Add Restaurant */
+
+.add-btn {
+
+    color: #ffffff;
+
+    background: #d97706;
+
+    border: 1px solid #d97706;
+}
+
+.add-btn:hover {
+
+    background: #92400e;
+
+    border-color: #92400e;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================
+   LOGOUT
+========================= */
+
+.dashboard-logout {
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 7px;
+
+    padding: 9px 20px;
+
+    background: transparent;
+
+    color: #b45309;
+
+    border: 1px solid #fed7aa;
+
+    border-radius: 8px;
+
+    font-size: 14px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+
+.dashboard-logout:hover {
+
+    background: #92400e;
+
+    color: #ffffff;
+
+    border-color: #92400e;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .dashboard-container {
+
+        padding: 20px 15px;
+    }
+
+    .dashboard-box {
+
+        width: 100%;
+
+        padding: 35px 25px;
+    }
+
+    .dashboard-box h1 {
+
+        font-size: 25px;
+    }
+
+    .dashboard-actions {
+
+        flex-direction: column;
+    }
+
+    .dashboard-btn {
+
+        width: 100%;
+    }
+}

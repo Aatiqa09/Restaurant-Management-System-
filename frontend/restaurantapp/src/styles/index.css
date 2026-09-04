@@ -1,0 +1,37 @@
+@import "./navbar.css";
+@import "./card.css";
+@import "./hero.css";
+@import "./dashboard.css";
+@import "./footer.css";
+@import "./form.css";
+
+body{
+    background:#f8f9fa;
+    font-family:'Segoe UI',sans-serif;
+}
+
+a{
+    text-decoration:none;
+}
+
+.card{
+    border:none;
+    border-radius:15px;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:.3s;
+}
+
+.btn{
+    border-radius:10px;
+}
+
+.form-control{
+    border-radius:10px;
+}
+
+.container{
+    margin-top:30px;
+}

@@ -1,0 +1,51 @@
+.hero-section{
+
+    height:350px;
+
+    background-image:url("https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=1600");
+
+    background-size:cover;
+
+    background-position:center;
+
+    position:relative;
+
+    border-radius:20px;
+
+    margin-bottom:40px;
+
+}
+
+.hero-section::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    border-radius:20px;
+
+}
+
+.hero-section div{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.hero-section h1{
+
+    font-size:60px;
+
+}
+
+.hero-section p{
+
+    font-size:20px;
+
+}

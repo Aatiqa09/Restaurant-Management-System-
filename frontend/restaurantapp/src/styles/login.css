@@ -1,0 +1,303 @@
+/* ===========================
+   LOGIN PAGE
+=========================== */
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* ===========================
+   BACKGROUND
+=========================== */
+
+.login-container {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    background: linear-gradient(
+        135deg,
+        #fff7ed 0%,
+        #fde68a 30%,
+        #f59e0b 70%,
+        #d97706 100%
+    );
+}
+
+/* Top Left Shape */
+
+.login-container::before {
+    content: "";
+    position: absolute;
+
+    width: 500px;
+    height: 500px;
+
+    top: -180px;
+    left: -150px;
+
+    background: rgba(255,255,255,.15);
+
+    clip-path: polygon(0 0,100% 0,45% 100%,0 60%);
+
+    transform: rotate(-20deg);
+}
+
+/* Bottom Right Shape */
+
+.login-container::after {
+    content: "";
+    position: absolute;
+
+    width: 650px;
+    height: 650px;
+
+    bottom: -260px;
+    right: -220px;
+
+    background: rgba(255,255,255,.12);
+
+    clip-path: polygon(100% 0,100% 100%,0 40%);
+
+    transform: rotate(15deg);
+}
+
+/* ===========================
+   GLOW CIRCLES
+=========================== */
+
+.bg-circle1,
+.bg-circle2{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(90px);
+    z-index:1;
+}
+
+.bg-circle1{
+    width:320px;
+    height:320px;
+
+    background:#fff7ed;
+
+    top:80px;
+    left:120px;
+
+    opacity:.45;
+}
+
+.bg-circle2{
+    width:350px;
+    height:350px;
+
+    background:#ea580c;
+
+    bottom:80px;
+    right:100px;
+
+    opacity:.28;
+}
+
+/* ===========================
+   LOGIN CARD
+=========================== */
+
+.login-card {
+
+    position: relative;
+    z-index: 10;
+
+    width: 430px;
+    padding: 40px;
+
+    background: rgba(255,255,255,.92);
+
+    backdrop-filter: blur(18px);
+    -webkit-backdrop-filter: blur(18px);
+
+    border-radius: 22px;
+
+    border:1px solid rgba(255,255,255,.35);
+
+    box-shadow:0 25px 60px rgba(0,0,0,.18);
+}
+
+/* ===========================
+   LOGO
+=========================== */
+
+.login-card i{
+    color:#d97706;
+}
+
+/* ===========================
+   HEADINGS
+=========================== */
+
+.login-card h2{
+    color:#92400e;
+    font-weight:700;
+}
+
+.login-card p{
+    color:#6b7280;
+}
+
+/* ===========================
+   LABELS
+=========================== */
+
+.form-label{
+    color:#92400e;
+    font-weight:600;
+}
+
+/* ===========================
+   INPUTS
+=========================== */
+
+.form-control{
+
+    height:50px;
+
+    border-radius:12px;
+
+    border:1px solid #d1d5db;
+
+    transition:.3s;
+}
+
+.form-control:focus{
+
+    border-color:#d97706;
+
+    box-shadow:0 0 0 .2rem rgba(217,119,6,.20);
+}
+
+/* Password Eye */
+
+.input-group .btn{
+
+    border-radius:0 12px 12px 0;
+
+    border-color:#d1d5db;
+}
+
+.input-group .btn:hover{
+
+    background:#fff7ed;
+
+    color:#d97706;
+}
+
+/* ===========================
+   REMEMBER ME
+=========================== */
+
+.form-check-label{
+
+    color:#4b5563;
+}
+
+.form-check-input:checked{
+
+    background:#d97706;
+
+    border-color:#d97706;
+}
+
+/* ===========================
+   FORGOT PASSWORD
+=========================== */
+
+.forgot-btn{
+
+    color:#b45309;
+
+    text-decoration:none;
+
+    font-weight:500;
+}
+
+.forgot-btn:hover{
+
+    color:#92400e;
+
+    text-decoration:underline;
+}
+
+/* ===========================
+   LOGIN BUTTON
+=========================== */
+
+.btn-success{
+
+    height:50px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+    font-weight:600;
+
+    background:#d97706;
+
+    transition:.3s;
+}
+
+.btn-success:hover{
+
+    background:#92400e;
+
+    transform:translateY(-2px);
+
+    box-shadow:0 10px 25px rgba(146,64,14,.35);
+}
+
+/* ===========================
+   REGISTER
+=========================== */
+
+.register-link{
+
+    color:#b45309;
+
+    text-decoration:none;
+
+    font-weight:600;
+}
+
+.register-link:hover{
+
+    color:#92400e;
+
+    text-decoration:underline;
+}
+
+/* ===========================
+   RESPONSIVE
+=========================== */
+
+@media(max-width:500px){
+
+.login-card{
+
+    width:100%;
+
+    padding:30px 25px;
+}
+
+.login-card h2{
+
+    font-size:30px;
+}
+
+}

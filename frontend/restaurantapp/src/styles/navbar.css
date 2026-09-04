@@ -1,0 +1,426 @@
+/* =====================================
+   RESTAURANT NAVBAR
+===================================== */
+
+.restaurant-navbar {
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    width: 100%;
+
+    background: rgba(255, 255, 255, 0.96);
+
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-bottom: 1px solid #fed7aa;
+
+    box-shadow:
+        0 4px 18px rgba(146, 64, 14, 0.08);
+}
+
+
+/* =====================================
+   NAVBAR CONTAINER
+===================================== */
+
+.navbar-container {
+
+    max-width: 1200px;
+
+    min-height: 72px;
+
+    margin: auto;
+
+    padding: 0 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+
+/* =====================================
+   BRAND
+===================================== */
+
+.restaurant-brand {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    text-decoration: none;
+
+    color: #92400e;
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    white-space: nowrap;
+
+    transition: 0.25s ease;
+}
+
+.restaurant-brand:hover {
+
+    color: #d97706;
+}
+
+
+/* Brand Icon */
+
+.brand-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    border-radius: 12px;
+
+    background: #fff7ed;
+
+    color: #d97706;
+
+    font-size: 21px;
+
+    transition: 0.25s ease;
+}
+
+.restaurant-brand:hover .brand-icon {
+
+    background: #d97706;
+
+    color: white;
+
+    transform: rotate(-5deg);
+}
+
+
+/* =====================================
+   NAVIGATION
+===================================== */
+
+.restaurant-nav {
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    flex: 1;
+
+    margin-left: 60px;
+}
+
+
+/* Navigation Links */
+
+.nav-links {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 8px;
+}
+
+.restaurant-nav-link {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 15px;
+
+    border-radius: 9px;
+
+    text-decoration: none;
+
+    color: #57534e;
+
+    font-size: 15px;
+
+    font-weight: 500;
+
+    transition: all 0.25s ease;
+}
+
+.restaurant-nav-link:hover {
+
+    background: #fff7ed;
+
+    color: #d97706;
+}
+
+
+/* Active-looking dashboard links */
+
+.restaurant-nav-link svg {
+
+    color: #d97706;
+
+    font-size: 15px;
+}
+
+
+/* =====================================
+   RIGHT SIDE ACTIONS
+===================================== */
+
+.nav-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+
+/* =====================================
+   ADD RESTAURANT
+===================================== */
+
+.add-restaurant-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 16px;
+
+    border-radius: 9px;
+
+    background: #d97706;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    border: 1px solid #d97706;
+
+    transition: all 0.25s ease;
+}
+
+.add-restaurant-btn:hover {
+
+    background: #92400e;
+
+    border-color: #92400e;
+
+    color: white;
+
+    transform: translateY(-1px);
+
+    box-shadow:
+        0 6px 15px rgba(146, 64, 14, 0.25);
+}
+
+
+/* =====================================
+   LOGOUT
+===================================== */
+
+.logout-btn {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 7px;
+
+    padding: 10px 15px;
+
+    border-radius: 9px;
+
+    background: transparent;
+
+    color: #b45309;
+
+    border: 1px solid #fed7aa;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all 0.25s ease;
+}
+
+.logout-btn:hover {
+
+    background: #92400e;
+
+    border-color: #92400e;
+
+    color: white;
+}
+
+
+/* =====================================
+   MOBILE MENU BUTTON
+===================================== */
+
+.navbar-toggle {
+
+    display: none;
+
+    width: 42px;
+
+    height: 42px;
+
+    padding: 8px;
+
+    border: 1px solid #fed7aa;
+
+    border-radius: 9px;
+
+    background: #fff7ed;
+
+    cursor: pointer;
+}
+
+.navbar-toggle span {
+
+    display: block;
+
+    width: 22px;
+
+    height: 2px;
+
+    margin: 4px auto;
+
+    background: #92400e;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================
+   TABLET
+===================================== */
+
+@media (max-width: 900px) {
+
+    .restaurant-nav {
+
+        margin-left: 25px;
+    }
+
+    .restaurant-brand {
+
+        font-size: 20px;
+    }
+
+    .add-restaurant-btn,
+    .logout-btn {
+
+        padding: 9px 11px;
+    }
+
+}
+
+
+/* =====================================
+   MOBILE
+===================================== */
+
+@media (max-width: 700px) {
+
+    .navbar-container {
+
+        min-height: 65px;
+
+        padding: 10px 20px;
+
+        flex-wrap: wrap;
+    }
+
+
+    .navbar-toggle {
+
+        display: block;
+    }
+
+
+    .restaurant-nav {
+
+        display: none;
+
+        width: 100%;
+
+        margin-left: 0;
+
+        padding: 15px 0 5px;
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        gap: 15px;
+    }
+
+
+    .restaurant-nav.show {
+
+        display: flex;
+    }
+
+
+    .nav-links {
+
+        flex-direction: column;
+
+        align-items: stretch;
+
+        width: 100%;
+    }
+
+
+    .restaurant-nav-link {
+
+        padding: 12px 15px;
+    }
+
+
+    .nav-actions {
+
+        flex-direction: column;
+
+        width: 100%;
+    }
+
+
+    .add-restaurant-btn,
+    .logout-btn {
+
+        justify-content: center;
+
+        width: 100%;
+    }
+
+}

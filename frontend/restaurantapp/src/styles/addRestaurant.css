@@ -1,0 +1,324 @@
+/* ==============================
+   ADD RESTAURANT PAGE
+================================ */
+
+.add-restaurant-page {
+    min-height: calc(100vh - 72px);
+    background: #fff7ed;
+    padding: 35px 20px 50px;
+}
+
+
+/* Main Card */
+
+.add-restaurant-card {
+    width: 100%;
+    max-width: 850px;
+    margin: 0 auto;
+
+    background: #ffffff;
+
+    border: 1px solid #fed7aa;
+    border-radius: 18px;
+
+    box-shadow: 0 10px 30px rgba(146, 64, 14, 0.10);
+
+    overflow: hidden;
+}
+
+
+/* Header */
+
+.add-restaurant-header {
+    padding: 25px 30px;
+
+    background: linear-gradient(
+        135deg,
+        #fff7ed,
+        #fde68a
+    );
+
+    border-bottom: 1px solid #fed7aa;
+}
+
+.add-restaurant-header h2 {
+    margin: 0;
+
+    color: #92400e;
+
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.add-restaurant-header p {
+    margin: 6px 0 0;
+
+    color: #78716c;
+
+    font-size: 14px;
+}
+
+
+/* Form */
+
+.add-restaurant-form {
+    padding: 30px;
+}
+
+
+/* Section Heading */
+
+.form-section-title {
+    margin: 25px 0 18px;
+
+    color: #92400e;
+
+    font-size: 18px;
+    font-weight: 600;
+
+    border-bottom: 1px solid #fed7aa;
+
+    padding-bottom: 8px;
+}
+
+.form-section-title:first-child {
+    margin-top: 0;
+}
+
+
+/* Labels */
+
+.add-restaurant-form .form-label {
+    color: #92400e;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    margin-bottom: 7px;
+}
+
+
+/* Inputs */
+
+.add-restaurant-form .form-control,
+.add-restaurant-form .form-select {
+    min-height: 46px;
+
+    border: 1px solid #d6d3d1;
+
+    border-radius: 9px;
+
+    padding: 10px 12px;
+
+    color: #44403c;
+
+    background: #ffffff;
+
+    box-shadow: none;
+
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+
+/* Textarea */
+
+.add-restaurant-form textarea.form-control {
+    min-height: 105px;
+
+    resize: vertical;
+}
+
+
+/* Focus */
+
+.add-restaurant-form .form-control:focus,
+.add-restaurant-form .form-select:focus {
+
+    border-color: #d97706;
+
+    box-shadow: 0 0 0 3px rgba(217, 119, 6, 0.12);
+
+    outline: none;
+}
+
+
+/* Placeholder */
+
+.add-restaurant-form .form-control::placeholder {
+    color: #a8a29e;
+}
+
+
+/* Checkboxes */
+
+.add-restaurant-form .form-check-input {
+
+    width: 18px;
+    height: 18px;
+
+    margin-top: 2px;
+
+    cursor: pointer;
+}
+
+.add-restaurant-form .form-check-input:checked {
+
+    background-color: #d97706;
+
+    border-color: #d97706;
+}
+
+.add-restaurant-form .form-check-label {
+
+    margin-left: 5px;
+
+    color: #57534e;
+
+    cursor: pointer;
+}
+
+
+/* Feature Section */
+
+.restaurant-features {
+
+    display: flex;
+
+    gap: 30px;
+
+    padding: 15px 0 5px;
+}
+
+
+/* Buttons */
+
+.form-buttons {
+
+    display: flex;
+
+    gap: 12px;
+
+    margin-top: 30px;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #fed7aa;
+}
+
+
+/* Add / Update Button */
+
+.restaurant-submit-btn {
+
+    min-width: 170px;
+
+    height: 46px;
+
+    border: none;
+
+    border-radius: 9px;
+
+    background: #d97706;
+
+    color: #ffffff;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.restaurant-submit-btn:hover {
+
+    background: #92400e;
+
+    transform: translateY(-1px);
+
+    box-shadow: 0 6px 15px rgba(146, 64, 14, 0.20);
+}
+
+.restaurant-submit-btn:disabled {
+
+    opacity: 0.7;
+
+    cursor: not-allowed;
+
+    transform: none;
+
+    box-shadow: none;
+}
+
+
+/* Cancel */
+
+.restaurant-cancel-btn {
+
+    min-width: 100px;
+
+    height: 46px;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    color: #57534e;
+
+    border: 1px solid #d6d3d1;
+
+    font-weight: 500;
+
+    cursor: pointer;
+
+    transition: 0.2s ease;
+}
+
+.restaurant-cancel-btn:hover {
+
+    background: #f5f5f4;
+
+    border-color: #a8a29e;
+}
+
+
+/* ==============================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 768px) {
+
+    .add-restaurant-page {
+
+        padding: 20px 15px 40px;
+    }
+
+    .add-restaurant-form {
+
+        padding: 22px;
+    }
+
+    .add-restaurant-header {
+
+        padding: 22px;
+    }
+
+    .restaurant-features {
+
+        flex-direction: column;
+
+        gap: 12px;
+    }
+
+    .form-buttons {
+
+        flex-direction: column;
+    }
+
+    .restaurant-submit-btn,
+    .restaurant-cancel-btn {
+
+        width: 100%;
+    }
+}
